@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #amogus {
+            width: 500px;
+            height: auto;
+            border: 2px, black;
+            border-style: solid;
+            border-radius: 2px;
+        }
+
+        #misz {
+            font-size: 20;
+
+
+        }
+
+        #amogus1 {
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <center><img src="sus.png" type="button" id="amogus" onClick="amogus()"><br>
+        <div id="misz">0
+
+        </div>
+        <input type="text" id="x" />
+        <br>
+    </center>
+    <br>
+    <button type="button" id="amogus1" onClick="amogus1()">
+        1000 pringels <br>
+        + 1 cps
+    </button>
+    <button type="button" id="amogus1" onClick="amogus2()">
+        5000 pringels <br>
+        + 5 cps
+    </button>
+    <button type="button" id="amogus1" onClick="amogus3()">
+        50000 pringels <br>
+        + 50 cps
+    </button>
+    <button type="button" id="amogus1" onClick="amogus4()">
+        1000000 pringels <br>
+        + 1000 cps
+    </button>
+    <button type="button" id="amogus1" onClick="amogus5()">
+        10000000 pringels <br>
+        + 10000 cps
+    </button>
+    <br>
+    <div id="gameTick">
+        0
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript">
+    var x = 1;
+    var z = 0
+    var misz = 0;
+    var sraka = () => { setTimeout(() => gameTick(), 1000); sraka(); }
+
+
+    function amogus() {
+
+        misz += x;
+        document.getElementById("misz").innerHTML = misz;
+
+    }
+    amogus();
+    function amogus1() {
+        if (misz >= 1000) {
+            x += 1
+            misz -= 1000
+            document.getElementById('x').value = 'cps boost = ' + x;
+        }
+    }
+    amogus1();
+    function amogus2() {
+        if (misz >= 5000) {
+            x += 5
+            misz -= 5000
+            document.getElementById('x').value = 'cps boost = ' + x;
+        }
+    }
+    amogus2();
+    function amogus3() {
+        if (misz >= 50000) {
+            x += 50
+            misz -= 50000
+            document.getElementById('x').value = 'cps boost = ' + x;
+        }
+    }
+    amogus3();
+    function amogus4() {
+        if (misz >= 1000000) {
+            x += 1000
+            misz -= 1000000
+            document.getElementById('x').value = 'cps boost = ' + x;
+        }
+    }
+    amogus4();
+    function amogus5() {
+        if (misz >= 10000000) {
+            x += 10000
+            misz -= 10000000
+            document.getElementById('x').value = 'cps boost = ' + x;
+        }
+    }
+    amogus5();
+    function gameTick() {
+        x++;
+    }
+    gameTick()
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
